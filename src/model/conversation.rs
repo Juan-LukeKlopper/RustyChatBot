@@ -10,3 +10,12 @@ pub struct Message {
     pub user: bool,
     pub text: String,
 }
+
+impl Conversation {
+    pub fn new() -> Conversation {
+        Conversation {
+            messages: Vec::new()
+        }
+    }
+}
+
